@@ -1,5 +1,6 @@
 class School < ActiveRecord::Base
-
+  has_many :classrooms
+  
   def self.by_name
     order(:name)
   end

@@ -1,0 +1,9 @@
+<%= form_for @school do |f| %>
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+
+  <%= f.label :level %>
+  <%= f.select :level, ['Elementary', 'Middle School', 'Junior High', 'High School', 'University'] %>
+
+  <%= f.submit nil, class: 'new-school-btn btn' %>
+<% end %>
